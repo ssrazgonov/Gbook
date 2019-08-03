@@ -1,0 +1,6 @@
+#login, #register, #comment-area, #logout, .admin-control, .add-answer-field{
+    display: none;
+}
+.isAdmin .admin-control {
+    display: block;
+}

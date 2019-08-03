@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="alert alert-dark">Гостевая книга <span id="username" class="badge badge-dark"></span>
+        </h1>
+
+        <section id="">
+            <a id="login-show" class="btn btn-dark" href="#">Вход</a>
+            <a id="register-show" class="btn btn-dark" href="#">Регистрация</a>
+            <a id="logout" class="btn btn-dark" href="#">Выход</a>
+        </section>
+
+        <section id="login" class="mt-3 mb-5">
+            <form>
+                <div class="form-group">
+                    <label for="login-username">Имя пользователя</label>
+                    <input type="text" class="form-control" id="login-username" placeholder="Введите имя пользователя">
+
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Введите пароль">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-login">Войти</button>
+            </form>
+        </section>
+
+        <section id="register" class="mt-3 mb-5">
+            <form>
+                <div class="form-group">
+                    <label for="register-username">Придумайте имя пользователя</label>
+                    <input type="text" class="form-control" id="register-username" aria-describedby="emailHelp" placeholder="Введите имя пользователя">
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Придумайте пароль</label>
+                    <input type="password" class="form-control" id="register-password" placeholder="Введите пароль">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-register">Зарегистрировать</button>
+            </form>
+        </section>
+
+        <section id="comment-area" class="mt-3">
+            <div class="form-group">
+                <textarea class="form-control" name="" id="comment-text" rows="3"></textarea>
+            </div>
+
+            <button id="add-comment" type="submit" class="btn btn-dark">Оставить запись</button>
+        </section>
+
+        <section id="comment-list" class="mt-3">
+            <img src="/css/126.gif" alt="">
+        </section>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
